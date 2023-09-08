@@ -13,19 +13,59 @@
     <header class="cabecalho">
         <div class="conteiner">
 
-            <span class="cabecalho__menu-hambuger"></span>
-            <img src="./assets/Logo.svg" alt="icone Alura Book">
+            <input class="conteiner__botao" type="checkbox" id="menu">
+
+            <label for="menu">
+
+                <span class="cabecalho__menu-hambuger conteiner__imagem"></span>
+
+            </label>
+
+            <ul class="lista-menu">
+
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Design & UX</a>
+                </li>
+
+            </ul>
+
+            <img class="conteiner__imagem" src="./assets/Logo.svg" alt="icone Alura Book">
 
         </div>
 
         <div class="conteiner">
 
-            <a href="#"> <img src="./assets/Favoritos.svg" alt="icone favoritos"> </a>
-            <a href="#"> <img src="./assets/Sacola.svg" alt="icone sacola"> </a>
-            <a href="#"> <img src="./assets/Usuario.svg" alt="icone usuario perfil"> </a>
+            <a href="#"> <img class="conteiner__imagem" src="./assets/Favoritos.svg" alt="icone favoritos"> </a>
+            <a href="#"> <img class="conteiner__imagem" src="./assets/Sacola.svg" alt="icone sacola"> </a>
+            <a href="#"> <img class="conteiner__imagem" src="./assets/Usuario.svg" alt="icone usuario perfil"> </a>
         </div>
 
     </header>
+
+    <section class="banner">
+
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+
+        <input class="banner__pesquisa" type="search" placeholder="Qual será sua próxima leitura?">
+
+    </section>
+
+
 </body>
 </head>
 

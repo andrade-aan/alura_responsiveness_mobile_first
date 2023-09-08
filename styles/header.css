@@ -1,24 +1,69 @@
 
-
-
-
 .cabecalho__menu-hambuger {
 
     width: 24px;
     height: 24px;
     background-image: url("../assets/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     display: inline-block; /* permite o uso do width e height */
 
 }
 
 .cabecalho {
-    background-color:var(--color-white);
+    background-color:var(--color-background-white);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /*possibilita o uso do position: relative na classe .lista-menu*/
 }
 
 .conteiner{
     display: flex;
     align-items: center;
+}
+
+.conteiner__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw /*vw - viewport width - relativo a largura da tela*/
+}
+
+/*pseudoclasse checked funciona como condicional.
+O ~ é um combinador CSS que direciona para a classe .lista-menu*/
+.conteiner__botao:checked ~ .lista-menu{ 
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--color-background-white);
+}
+
+.lista-menu__titulo{
+    color: var(--color-font-orange);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+
+    background: var(--color-font-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+
+
+
+    color: var(--color-font-gradient);
+}
+
+.conteiner__botao {
+    display: none; /*retirando o checked box*/
 }
