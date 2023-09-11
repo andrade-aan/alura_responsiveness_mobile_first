@@ -1,0 +1,16 @@
+.rodape {
+    margin: 1em;
+}
+
+hr {
+    margin: 0;
+    
+    border: 1px solid #858585;
+}
+
+.rodape__titulo{
+
+    padding: .4em;
+    font-weight: 400;
+    color: #000000;
+}
