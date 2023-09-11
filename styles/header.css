@@ -58,12 +58,57 @@ O ~ é um combinador CSS que direciona para a classe .lista-menu*/
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
-
-
-
     color: var(--color-font-gradient);
 }
 
 .conteiner__botao {
     display: none; /*retirando o checked box*/
+}
+
+.conteiner__1024px__titulo,
+.opcoes__1024px {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .conteiner__1024px__clear {
+        display: none;
+    }
+
+    .conteiner__1024px__titulo,
+    .conteiner__1024px__titulo--negrito {
+        display: inline;
+        font-family: var(--font-josefin);
+        font-size: 30px;
+    }
+    .conteiner__1024px__titulo {
+        font-weight: 400;
+    }
+    .conteiner__1024px__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opcoes__1024px {
+        display: flex;
+    }
+
+    .opcoes__1024px__item,
+    .opcoes__1024px__link {
+        padding: 0 1em;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: var(--color-font-black);
+    }
+
+    .opcoes__1024px__botao {
+        display: none;
+    }
+
+    .opcoes__1024px__botao:checked ~ .lista-menu{
+        display: block;
+        width: auto;
+    }
+
+
 }

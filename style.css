@@ -5,12 +5,13 @@
 @import url("styles/contato.css");
 @import url("styles/rodape.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
 
 :root {
     /*font colors*/
     --color-background-gray: #EBECEE;
     --color-background-white: #ffffff;
+    --color-font-black: #000000;
     --color-font-orange: #eb9800;
     --color-font-blue: #002F52;
     --color-font-gradient: linear-gradient(
@@ -19,6 +20,7 @@
     /*font text*/
 
     --font-poppins: "Poppins", sans-serif;
+    --font-josefin: "Josefin Sans", sans-serif;
 
 
 }
